@@ -96,7 +96,7 @@ function App() {
     const filteredItems =
     type === "active" ? notDoneItems : type === "done" ? doneItems : items;
 
-    const classifyItems = () => filteredItems.filter(item =>
+    const classifyItems = filteredItems.filter(item =>
     {
       if(searchValue){
         return item.label.toLowerCase().includes(searchValue.toLowerCase())
